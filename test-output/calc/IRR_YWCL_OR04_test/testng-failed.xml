@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [/calc/IRR_YWCL_OR04_test]">
+  <parameter name="filename" value="1"/>
+  <test name="YWCL_OR04_case1(failed)">
+    <parameter name="filename" value="1"/>
+    <classes>
+      <class name="com.webirrse.testcode.IRR_YWCL_OR04">
+        <methods>
+          <include name="bmglcjy_wnys" invocation-numbers="0"/>
+          <include name="zjxyqdl_xys" invocation-numbers="0"/>
+          <include name="yglsl" invocation-numbers="0"/>
+          <include name="xsglfx_zc" invocation-numbers="0"/>
+          <include name="zhglaq_jg" invocation-numbers="0"/>
+          <include name="zjczfx_jg" invocation-numbers="0"/>
+          <include name="cbglfx_jg" invocation-numbers="0"/>
+          <include name="glclzl_lz" invocation-numbers="0"/>
+          <include name="xsxyqdl_yxs" invocation-numbers="0"/>
+          <include name="qyhfl_hfs" invocation-numbers="0"/>
+          <include name="yyqhfcgl" invocation-numbers="0"/>
+          <include name="qzbdtsl" invocation-numbers="0"/>
+          <include name="glclzl" invocation-numbers="0"/>
+          <include name="xqsfl_ss" invocation-numbers="0"/>
+          <include name="yyqhfcgl_hfs" invocation-numbers="0"/>
+          <include name="bqccl_sxs" invocation-numbers="0"/>
+          <include name="bdsxl_jb" invocation-numbers="0"/>
+          <include name="fxqfx_cf" invocation-numbers="0"/>
+          <include name="tbl" invocation-numbers="0"/>
+          <include name="fxqfx_jgh" invocation-numbers="0"/>
+          <include name="yglsl_lz" invocation-numbers="0"/>
+          <include name="qyhfl" invocation-numbers="0"/>
+          <include name="fzrpxcs" invocation-numbers="0"/>
+          <include name="xqsfl" invocation-numbers="0"/>
+          <include name="zyczfx_jg" invocation-numbers="0"/>
+          <include name="bqglfx_jg" invocation-numbers="0"/>
+          <include name="zjczfx_zc" invocation-numbers="0"/>
+          <include name="tbl_cb" invocation-numbers="0"/>
+          <include name="dlxxlcl_pgzz" invocation-numbers="0"/>
+          <include name="zjxyqdl" invocation-numbers="0"/>
+          <include name="bqbgwcl_wc" invocation-numbers="0"/>
+          <include name="zdfx" invocation-numbers="0"/>
+          <include name="bqbgwcl" invocation-numbers="0"/>
+          <include name="xsxyqdl" invocation-numbers="0"/>
+          <include name="bmglcjy" invocation-numbers="0"/>
+          <include name="dlxxlcl" invocation-numbers="0"/>
+          <include name="bqccl_ccs" invocation-numbers="0"/>
+          <include name="glclzl_zz" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="cbglfx_zc" invocation-numbers="0"/>
+          <include name="yjxtjt" invocation-numbers="0"/>
+          <include name="qzbdtsl_tss" invocation-numbers="0"/>
+          <include name="zyczfx_zc" invocation-numbers="0"/>
+          <include name="bdsxl_sx" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="xsglfx_jg" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.webirrse.testcode.IRR_YWCL_OR04 -->
+    </classes>
+  </test> <!-- YWCL_OR04_case1(failed) -->
+</suite> <!-- Failed suite [/calc/IRR_YWCL_OR04_test] -->

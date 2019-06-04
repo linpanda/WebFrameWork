@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [swebirrse.demo]">
+  <test name="test_seleniumcn(failed)">
+    <classes>
+      <class name="com.webirrse.code.demo.TestSuit">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="f"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.webirrse.code.demo.TestSuit -->
+    </classes>
+  </test> <!-- test_seleniumcn(failed) -->
+</suite> <!-- Failed suite [swebirrse.demo] -->

@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="/calc/demo_test">
+	<listeners>
+		<listener class-name="com.code.common.testng.AssertionListener" />
+	</listeners>
+	<test name="dem_case1">
+		<parameter name="filename" value="1"></parameter>
+		<classes>
+			<class name="com.code.demo.demo" />
+		</classes>
+	</test>
+	<test name="dem_case2">
+		<parameter name="filename" value="2"></parameter>
+		<classes>
+			<class name="com.code.demo.demo" />
+		</classes>
+	</test>
+	<test name="dem_case3">
+		<parameter name="filename" value="3"></parameter>
+		<classes>
+			<class name="com.code.demo.demo" />
+		</classes>
+	</test>
+		<test name="dem_case5">
+		<parameter name="filename" value="5"></parameter>
+		<classes>
+			<class name="com.code.demo.demo" />
+		</classes>
+	</test>
+</suite> 

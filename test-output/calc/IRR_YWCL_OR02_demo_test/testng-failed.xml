@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [/calc/IRR_YWCL_OR02_demo_test]">
+  <parameter name="filename" value="3"/>
+  <listeners>
+    <listener class-name="com.webirrse.code.demo.ListenerVerify"/>
+  </listeners>
+  <test name="YWCL_OR02_dem_case2(failed)">
+    <parameter name="filename" value="2"/>
+    <classes>
+      <class name="com.webirrse.code.demo.IRR_YWCL_OR02_demo">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="salesquitestimate"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.webirrse.code.demo.IRR_YWCL_OR02_demo -->
+    </classes>
+  </test> <!-- YWCL_OR02_dem_case2(failed) -->
+  <test name="YWCL_OR02_dem_case3(failed)">
+    <parameter name="filename" value="3"/>
+    <classes>
+      <class name="com.webirrse.code.demo.IRR_YWCL_OR02_demo">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="salesquitestimate"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.webirrse.code.demo.IRR_YWCL_OR02_demo -->
+    </classes>
+  </test> <!-- YWCL_OR02_dem_case3(failed) -->
+</suite> <!-- Failed suite [/calc/IRR_YWCL_OR02_demo_test] -->

@@ -1,0 +1,1840 @@
+<html>
+<head>
+<title>TestNG:  YWCL_OR04_case1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>YWCL_OR04_case1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/44/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 15 18:21:59 CST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>84 seconds (84020 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bdsxl_jb()'><b>bdsxl_jb</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C58减保金额 expected [5] but found [8]
+	at com.webirrse.testcode.IRR_YWCL_OR04.bdsxl_jb(IRR_YWCL_OR04.java:455)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2139266166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2139266166'><pre>java.lang.AssertionError: C58减保金额 expected [5] but found [8]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.bdsxl_jb(IRR_YWCL_OR04.java:455)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bdsxl_sx()'><b>bdsxl_sx</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C57失效、退保金额 expected [0.02] but found [0.05]
+	at com.webirrse.testcode.IRR_YWCL_OR04.bdsxl_sx(IRR_YWCL_OR04.java:449)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1471633238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1471633238'><pre>java.lang.AssertionError: C57失效、退保金额 expected [0.02] but found [0.05]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.bdsxl_sx(IRR_YWCL_OR04.java:449)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bmglcjy()'><b>bmglcjy</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C7部门负责人具有5年以上保险相关从业经验的占比 expected [0.81] but found [0.51]
+	at com.webirrse.testcode.IRR_YWCL_OR04.bmglcjy(IRR_YWCL_OR04.java:145)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1625090026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1625090026'><pre>java.lang.AssertionError: C7部门负责人具有5年以上保险相关从业经验的占比 expected [0.81] but found [0.51]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.bmglcjy(IRR_YWCL_OR04.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bmglcjy_wnys()'><b>bmglcjy_wnys</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C8五年以上相关从业经验人数 expected [81] but found [51]
+	at com.webirrse.testcode.IRR_YWCL_OR04.bmglcjy_wnys(IRR_YWCL_OR04.java:151)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1037955032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1037955032'><pre>java.lang.AssertionError: C8五年以上相关从业经验人数 expected [81] but found [51]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.bmglcjy_wnys(IRR_YWCL_OR04.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bqbgwcl()'><b>bqbgwcl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C48保全变更完成率 expected [0.96] but found [0.91]
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqbgwcl(IRR_YWCL_OR04.java:395)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace945064729", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace945064729'><pre>java.lang.AssertionError: C48保全变更完成率 expected [0.96] but found [0.91]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqbgwcl(IRR_YWCL_OR04.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bqbgwcl_wc()'><b>bqbgwcl_wc</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C49评估期保全变更完成件数 expected [96] but found [91]
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqbgwcl_wc(IRR_YWCL_OR04.java:401)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1360440329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1360440329'><pre>java.lang.AssertionError: C49评估期保全变更完成件数 expected [96] but found [91]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqbgwcl_wc(IRR_YWCL_OR04.java:401)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bqccl_ccs()'><b>bqccl_ccs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C63评估期内保全差错件总量 expected [0.0099] but found [0.0199]
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqccl_ccs(IRR_YWCL_OR04.java:485)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131096911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace131096911'><pre>java.lang.AssertionError: C63评估期内保全差错件总量 expected [0.0099] but found [0.0199]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqccl_ccs(IRR_YWCL_OR04.java:485)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bqccl_sxs()'><b>bqccl_sxs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C64评估期操作的确认生效的保全件总量 expected [99] but found [199]
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqccl_sxs(IRR_YWCL_OR04.java:491)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823343982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823343982'><pre>java.lang.AssertionError: C64评估期操作的确认生效的保全件总量 expected [99] but found [199]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqccl_sxs(IRR_YWCL_OR04.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bqglfx_jg()'><b>bqglfx_jg</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C67最近4个季度监管部门检查发现保全管理操作风险事件的次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqglfx_jg(IRR_YWCL_OR04.java:509)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace596905862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace596905862'><pre>java.lang.AssertionError: C67最近4个季度监管部门检查发现保全管理操作风险事件的次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.bqglfx_jg(IRR_YWCL_OR04.java:509)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.cbglfx_jg()'><b>cbglfx_jg</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C44最近4个季度监管部门发现承保管理操作风险事件次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.cbglfx_jg(IRR_YWCL_OR04.java:371)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2090289474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2090289474'><pre>java.lang.AssertionError: C44最近4个季度监管部门发现承保管理操作风险事件次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.cbglfx_jg(IRR_YWCL_OR04.java:371)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.cbglfx_zc()'><b>cbglfx_zc</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C43最近4个季度公司自查发现承保管理操作风险事件次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.cbglfx_zc(IRR_YWCL_OR04.java:365)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace168468389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace168468389'><pre>java.lang.AssertionError: C43最近4个季度公司自查发现承保管理操作风险事件次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.cbglfx_zc(IRR_YWCL_OR04.java:365)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.dlxxlcl()'><b>dlxxlcl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C25代理制销售人员13个月留存率 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.dlxxlcl(IRR_YWCL_OR04.java:256)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1365790282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1365790282'><pre>java.lang.AssertionError: C25代理制销售人员13个月留存率 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.dlxxlcl(IRR_YWCL_OR04.java:256)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.dlxxlcl_pgzz()'><b>dlxxlcl_pgzz</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C26评估期期末前13个月已入职且评估期在职代理制销售人员数 expected [0] but found [100]
+	at com.webirrse.testcode.IRR_YWCL_OR04.dlxxlcl_pgzz(IRR_YWCL_OR04.java:262)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace726051009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726051009'><pre>java.lang.AssertionError: C26评估期期末前13个月已入职且评估期在职代理制销售人员数 expected [0] but found [100]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.dlxxlcl_pgzz(IRR_YWCL_OR04.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.fxqfx_cf()'><b>fxqfx_cf</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C41最近4个季度公司因反洗钱工作被监管部门处罚次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.fxqfx_cf(IRR_YWCL_OR04.java:353)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1184694332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1184694332'><pre>java.lang.AssertionError: C41最近4个季度公司因反洗钱工作被监管部门处罚次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.fxqfx_cf(IRR_YWCL_OR04.java:353)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.fxqfx_jgh()'><b>fxqfx_jgh</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C42最近4个季度公司因反洗钱工作被监管部门下发监管函的次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.fxqfx_jgh(IRR_YWCL_OR04.java:359)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1482344533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1482344533'><pre>java.lang.AssertionError: C42最近4个季度公司因反洗钱工作被监管部门下发监管函的次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.fxqfx_jgh(IRR_YWCL_OR04.java:359)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.fzrpxcs()'><b>fzrpxcs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C14最近4个季度部门负责人培训次数 expected [4] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.fzrpxcs(IRR_YWCL_OR04.java:188)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace754527431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace754527431'><pre>java.lang.AssertionError: C14最近4个季度部门负责人培训次数 expected [4] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.fzrpxcs(IRR_YWCL_OR04.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.glclzl()'><b>glclzl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C4管理层离职率错误 expected [1] but found [0.49]
+	at com.webirrse.testcode.IRR_YWCL_OR04.glclzl(IRR_YWCL_OR04.java:127)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2001115307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2001115307'><pre>java.lang.AssertionError: C4管理层离职率错误 expected [1] but found [0.49]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.glclzl(IRR_YWCL_OR04.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>1</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.glclzl_lz()'><b>glclzl_lz</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C5最近4个季度省级分公司总经理室成员及中心支公司主要负责人离职人数错误 expected [29] but found [49]
+	at com.webirrse.testcode.IRR_YWCL_OR04.glclzl_lz(IRR_YWCL_OR04.java:133)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace57624756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace57624756'><pre>java.lang.AssertionError: C5最近4个季度省级分公司总经理室成员及中心支公司主要负责人离职人数错误 expected [29] but found [49]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.glclzl_lz(IRR_YWCL_OR04.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.glclzl_zz()'><b>glclzl_zz</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C6评估期期末省级分公司总经理室成员及中心支公司主要负责人在职人数错误 expected [71] but found [51]
+	at com.webirrse.testcode.IRR_YWCL_OR04.glclzl_zz(IRR_YWCL_OR04.java:139)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace281421502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace281421502'><pre>java.lang.AssertionError: C6评估期期末省级分公司总经理室成员及中心支公司主要负责人在职人数错误 expected [71] but found [51]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.glclzl_zz(IRR_YWCL_OR04.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.qyhfl()'><b>qyhfl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C38新契约回访完成率 expected [1] but found [0.95]
+	at com.webirrse.testcode.IRR_YWCL_OR04.qyhfl(IRR_YWCL_OR04.java:335)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1417413828", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1417413828'><pre>java.lang.AssertionError: C38新契约回访完成率 expected [1] but found [0.95]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.qyhfl(IRR_YWCL_OR04.java:335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.qyhfl_hfs()'><b>qyhfl_hfs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C39评估期内承保的保单中完成回访的保单件数 expected [100] but found [95]
+	at com.webirrse.testcode.IRR_YWCL_OR04.qyhfl_hfs(IRR_YWCL_OR04.java:341)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace675833472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace675833472'><pre>java.lang.AssertionError: C39评估期内承保的保单中完成回访的保单件数 expected [100] but found [95]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.qyhfl_hfs(IRR_YWCL_OR04.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.qzbdtsl()'><b>qzbdtsl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C22千张保单投诉量 expected [2] but found [5]
+	at com.webirrse.testcode.IRR_YWCL_OR04.qzbdtsl(IRR_YWCL_OR04.java:238)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2103569615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2103569615'><pre>java.lang.AssertionError: C22千张保单投诉量 expected [2] but found [5]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.qzbdtsl(IRR_YWCL_OR04.java:238)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.qzbdtsl_tss()'><b>qzbdtsl_tss</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C23评估期公司受理的有效投诉件数总量 expected [2] but found [5]
+	at com.webirrse.testcode.IRR_YWCL_OR04.qzbdtsl_tss(IRR_YWCL_OR04.java:244)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace220165304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace220165304'><pre>java.lang.AssertionError: C23评估期公司受理的有效投诉件数总量 expected [2] but found [5]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.qzbdtsl_tss(IRR_YWCL_OR04.java:244)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.tbl()'><b>tbl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C52退（撤）保率 expected [0.04] but found [0.09]
+	at com.webirrse.testcode.IRR_YWCL_OR04.tbl(IRR_YWCL_OR04.java:419)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1231036290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1231036290'><pre>java.lang.AssertionError: C52退（撤）保率 expected [0.04] but found [0.09]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.tbl(IRR_YWCL_OR04.java:419)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.tbl_cb()'><b>tbl_cb</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C53评估期本期合计撤保金总额 expected [2] but found [7]
+	at com.webirrse.testcode.IRR_YWCL_OR04.tbl_cb(IRR_YWCL_OR04.java:425)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace696591495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace696591495'><pre>java.lang.AssertionError: C53评估期本期合计撤保金总额 expected [2] but found [7]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.tbl_cb(IRR_YWCL_OR04.java:425)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.xqsfl()'><b>xqsfl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C45续期收费率 expected [0.91] but found [0.81]
+	at com.webirrse.testcode.IRR_YWCL_OR04.xqsfl(IRR_YWCL_OR04.java:377)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace184244257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace184244257'><pre>java.lang.AssertionError: C45续期收费率 expected [0.91] but found [0.81]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.xqsfl(IRR_YWCL_OR04.java:377)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.xqsfl_ss()'><b>xqsfl_ss</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C46评估期本期应收实收保费 expected [91] but found [81]
+	at com.webirrse.testcode.IRR_YWCL_OR04.xqsfl_ss(IRR_YWCL_OR04.java:383)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace843149630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace843149630'><pre>java.lang.AssertionError: C46评估期本期应收实收保费 expected [91] but found [81]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.xqsfl_ss(IRR_YWCL_OR04.java:383)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.xsglfx_jg()'><b>xsglfx_jg</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C33最近4个季度监管部门检查发现存在销售人员管理操作风险事件的次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.xsglfx_jg(IRR_YWCL_OR04.java:305)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2074492901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2074492901'><pre>java.lang.AssertionError: C33最近4个季度监管部门检查发现存在销售人员管理操作风险事件的次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.xsglfx_jg(IRR_YWCL_OR04.java:305)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.xsglfx_zc()'><b>xsglfx_zc</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C32最近4个季度公司自查发现存在销售人员管理操作风险事件的次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.xsglfx_zc(IRR_YWCL_OR04.java:299)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1565713391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1565713391'><pre>java.lang.AssertionError: C32最近4个季度公司自查发现存在销售人员管理操作风险事件的次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.xsglfx_zc(IRR_YWCL_OR04.java:299)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.xsxyqdl()'><b>xsxyqdl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C19代理机构总家数 expected [1] but found [0.99]
+	at com.webirrse.testcode.IRR_YWCL_OR04.xsxyqdl(IRR_YWCL_OR04.java:220)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace569138567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace569138567'><pre>java.lang.AssertionError: C19代理机构总家数 expected [1] but found [0.99]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.xsxyqdl(IRR_YWCL_OR04.java:220)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.xsxyqdl_yxs()'><b>xsxyqdl_yxs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C20评估期期末公司与销售人员签订有效的劳动合同、代理合同份数 expected [100] but found [99]
+	at com.webirrse.testcode.IRR_YWCL_OR04.xsxyqdl_yxs(IRR_YWCL_OR04.java:226)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2047984839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2047984839'><pre>java.lang.AssertionError: C20评估期期末公司与销售人员签订有效的劳动合同、代理合同份数 expected [100] but found [99]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.xsxyqdl_yxs(IRR_YWCL_OR04.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.yglsl()'><b>yglsl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C10员工流失率 expected [0.14] but found [0.29]
+	at com.webirrse.testcode.IRR_YWCL_OR04.yglsl(IRR_YWCL_OR04.java:163)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1262237002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1262237002'><pre>java.lang.AssertionError: C10员工流失率 expected [0.14] but found [0.29]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.yglsl(IRR_YWCL_OR04.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.yglsl_lz()'><b>yglsl_lz</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C11最近4个季度省级分公司及以下分支机构销售、承保、保全部门离职员工人数 expected [14] but found [29]
+	at com.webirrse.testcode.IRR_YWCL_OR04.yglsl_lz(IRR_YWCL_OR04.java:169)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace237373286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace237373286'><pre>java.lang.AssertionError: C11最近4个季度省级分公司及以下分支机构销售、承保、保全部门离职员工人数 expected [14] but found [29]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.yglsl_lz(IRR_YWCL_OR04.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.yjxtjt()'><b>yjxtjt</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C71佣金系统计提情况 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.yjxtjt(IRR_YWCL_OR04.java:534)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace133987402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace133987402'><pre>java.lang.AssertionError: C71佣金系统计提情况 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.yjxtjt(IRR_YWCL_OR04.java:534)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.yyqhfcgl()'><b>yyqhfcgl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C35犹豫期内电话回访成功率 expected [1] but found [0.9]
+	at com.webirrse.testcode.IRR_YWCL_OR04.yyqhfcgl(IRR_YWCL_OR04.java:317)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1075082007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1075082007'><pre>java.lang.AssertionError: C35犹豫期内电话回访成功率 expected [1] but found [0.9]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.yyqhfcgl(IRR_YWCL_OR04.java:317)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.yyqhfcgl_hfs()'><b>yyqhfcgl_hfs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C36评估期内通过电话回访方式在犹豫期内完成新契约回访的保单件数 expected [100] but found [90]
+	at com.webirrse.testcode.IRR_YWCL_OR04.yyqhfcgl_hfs(IRR_YWCL_OR04.java:323)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace444127949", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace444127949'><pre>java.lang.AssertionError: C36评估期内通过电话回访方式在犹豫期内完成新契约回访的保单件数 expected [100] but found [90]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.yyqhfcgl_hfs(IRR_YWCL_OR04.java:323)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zdfx()'><b>zdfx</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C68公司销售、承保、保全环节发现重大操作风险事件的次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.zdfx(IRR_YWCL_OR04.java:516)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412612727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412612727'><pre>java.lang.AssertionError: C68公司销售、承保、保全环节发现重大操作风险事件的次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.zdfx(IRR_YWCL_OR04.java:516)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zhglaq_jg()'><b>zhglaq_jg</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C70监管部门检查发现账号管理安全事件的次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.zhglaq_jg(IRR_YWCL_OR04.java:528)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace100703210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace100703210'><pre>java.lang.AssertionError: C70监管部门检查发现账号管理安全事件的次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.zhglaq_jg(IRR_YWCL_OR04.java:528)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zjczfx_jg()'><b>zjczfx_jg</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C31最近4个季度监管发现中介业务操作风险事件次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.zjczfx_jg(IRR_YWCL_OR04.java:293)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1542856295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1542856295'><pre>java.lang.AssertionError: C31最近4个季度监管发现中介业务操作风险事件次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.zjczfx_jg(IRR_YWCL_OR04.java:293)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zjczfx_zc()'><b>zjczfx_zc</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C30最近4个季度公司自查发现中介业务操作风险事件次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.zjczfx_zc(IRR_YWCL_OR04.java:286)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4181455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4181455'><pre>java.lang.AssertionError: C30最近4个季度公司自查发现中介业务操作风险事件次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.zjczfx_zc(IRR_YWCL_OR04.java:286)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zjxyqdl()'><b>zjxyqdl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C16中介协议签订率 expected [1] but found [0.99]
+	at com.webirrse.testcode.IRR_YWCL_OR04.zjxyqdl(IRR_YWCL_OR04.java:200)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace61137731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace61137731'><pre>java.lang.AssertionError: C16中介协议签订率 expected [1] but found [0.99]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.zjxyqdl(IRR_YWCL_OR04.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zjxyqdl_xys()'><b>zjxyqdl_xys</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C17评估期期末公司与代理机构签订有效的合作协议份数 expected [100] but found [99]
+	at com.webirrse.testcode.IRR_YWCL_OR04.zjxyqdl_xys(IRR_YWCL_OR04.java:207)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace546796969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace546796969'><pre>java.lang.AssertionError: C17评估期期末公司与代理机构签订有效的合作协议份数 expected [100] but found [99]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.zjxyqdl_xys(IRR_YWCL_OR04.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zyczfx_jg()'><b>zyczfx_jg</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C29最近4个季度监管部门发现展业操作风险事件次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.zyczfx_jg(IRR_YWCL_OR04.java:280)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace234223040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace234223040'><pre>java.lang.AssertionError: C29最近4个季度监管部门发现展业操作风险事件次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.zyczfx_jg(IRR_YWCL_OR04.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zyczfx_zc()'><b>zyczfx_zc</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td><div><pre>java.lang.AssertionError: C28最近4个季度公司自查发现展业操作风险事件次数 expected [0] but found [1]
+	at com.webirrse.testcode.IRR_YWCL_OR04.zyczfx_zc(IRR_YWCL_OR04.java:274)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977650730", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977650730'><pre>java.lang.AssertionError: C28最近4个季度公司自查发现展业操作风险事件次数 expected [0] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.webirrse.testcode.IRR_YWCL_OR04.zyczfx_zc(IRR_YWCL_OR04.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.IRR_YWCL_OR04_INPut()'><b>IRR_YWCL_OR04_INPut</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>78</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bdsxl()'><b>bdsxl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bdsxl_fx()'><b>bdsxl_fx</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bdsxl_lj()'><b>bdsxl_lj</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bdsxl_zb()'><b>bdsxl_zb</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bdzyzf()'><b>bdzyzf</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bmglcjy_qmzs()'><b>bmglcjy_qmzs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bqbgwcl_lc()'><b>bqbgwcl_lc</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bqbgwcl_xz()'><b>bqbgwcl_xz</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bqccl()'><b>bqccl</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.bqglfx_zc()'><b>bqglfx_zc</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.cbbfx()'><b>cbbfx</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.dlxxlcl_rz()'><b>dlxxlcl_rz</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.qyhfl_bds()'><b>qyhfl_bds</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.qzbdtsl_yxs()'><b>qzbdtsl_yxs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.tbl_ss()'><b>tbl_ss</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.tbl_tb()'><b>tbl_tb</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.xqsfl_ys()'><b>xqsfl_ys</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.xsxyqdl_zs()'><b>xsxyqdl_zs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.yglsl_qb()'><b>yglsl_qb</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.yglsl_zj()'><b>yglsl_zj</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.yjkh()'><b>yjkh</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.yyqhfcgl_bds()'><b>yyqhfcgl_bds</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zhglaq_zc()'><b>zhglaq_zc</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+<tr>
+<td title='com.webirrse.testcode.IRR_YWCL_OR04.zjxyqdl_jgs()'><b>zjxyqdl_jgs</b><br>Test class: com.webirrse.testcode.IRR_YWCL_OR04<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.webirrse.testcode.IRR_YWCL_OR04@53b32d7</td></tr>
+</table><p>
+</body>
+</html>
